@@ -18,7 +18,7 @@
   <meta name="twitter:image" content="{{ site.url }}/assets/og-image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBMPlexMono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -26,6 +26,7 @@
       theme: {
         extend: {
           fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
             mono: ['"IBM Plex Mono"', 'monospace']
           }
         }
@@ -37,7 +38,7 @@
 </head>
 
 <body
-  class="flex flex-col min-h-screen antialiased text-sm uppercase font-mono bg-white text-gray-900 dark:bg-slate-900 dark:text-slate-100 selection:bg-indigo-500 selection:text-white">
+  class="flex flex-col min-h-screen antialiased font-sans bg-white text-gray-900 dark:bg-slate-900 dark:text-slate-100 selection:bg-indigo-500 selection:text-white">
   <main class="flex flex-col justify-between flex-grow">{{ content }}</main>
   <footer class="mt-12 border-t border-slate-200 dark:border-slate-800">
     <div
